@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+<nav id="navbar">
+        <div id="navbar-container">
+          
+        </div>
+    </nav>
+
+    <div class="box">
+
+
+        <div class="btn">
+            <a href="site.html">
+                <h1>Ir para o site</h1>
+            </a>
+        </div>
+
+    </div>
+<style>
+     @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #faf2a0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.headline {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+/* Navbar */
+#navbar {
+    width: 100%;
+    background: #c5faac;
+    color: rgb(195, 137, 243);
+    height: 120px;
+    position: fixed;
+}
+
+#navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 4rem;
+}
+
+#navbar-items {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#navbar-items li {
+    padding: 10px;
+    border-radius: 10px;
+}
+#navbar-items li:hover {
+    background-color:#c4c0c5;   
+    color: #062463; 
+    transition: 0.7s;
+}
+
+
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    text-align: center;
+}
+
+a h1{
+    padding: 25px;         
+    border: none;
+    cursor: pointer;
+    background-color: rgb(163, 120, 255);
+    border-radius: 10px;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 15px;
+    box-shadow: 15px 15px 25px rgba(0,0,0,0.4); 
+}
+a:hover h1{
+    background-color:#6f51b0;
+    transition: 0.5s;
+}
+</style>
+</html>
